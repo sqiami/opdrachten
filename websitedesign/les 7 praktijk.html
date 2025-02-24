@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>inschrijfformulier</title>
+    </head>
+    <body>
+        <h1>Inschrijven</h1>
+        <form>
+            <fieldset>
+                <legend>Persoonlijke gegevens</legend>
+                <label for="naam">Naam:</label>
+                <input id="naam" type="text" name="Naam">
+                <br><br>
+                <input type="radio" name="geslacht" value="man" checked>Man
+                <input type="radio" name="geslacht" value="vrouw">Vrouw
+                <input type="radio" name="geslacht" value="anders">Anders
+                <label for="adres">Adres:</label>
+                <input type="text" id="adres" name="adres">
+                <label for="postcode">postcode:</label>
+                <input type="text" id="postcode" name="postcode">
+                <label for="woonplaats">woonplaats</label>
+                <input type="text" id="woonplaats" name="woonplaats">
+                <label for="profielfoto">Selecteer een profielfoto</label>
+                <input type="file" id="profielfoto" name="profielfoto">
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Inschrijvingsinformatie</legend>
+                <b>Selecteer een cursus</b><br>
+                <input type="checkbox" name="onderwerpen" value="webdesign">webdesign
+                <input type="checkbox" name="onderwerpen" value="python">python
+                <input type="checkbox" name="onderwerpen" value="javascript">Javascript
+                <br><br>
+                <b><Selecteer uw hoogst genoten opleiding></b>
+                    <br>
+                    <select name="opleiding">
+                        <option value="geen">Geen</option>
+                        <option value="middelbaar onderwijs" selected>Middelbaar onderwijs</option>
+                        <option value="hbo wo">hoger beroepsonderwijs</option>
+                        </select>
+                        <br><br>
+                        <b> Selecteer start datum</b><br>
+                        <input type="date" name="datum" max="2030-12-31">
+                        <br><br>
+                    </fieldset>
+                    <input type="submit" value="Verzend">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>My page</title>
+    <script
+    src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $("#knop").click(function() {
+    var naam = $("#idTekstveld1").val();
+    var telefoonnummer = $("#idTekstveld2").val();
+    var adres = $("#idTekstveld3").val();
+    var email = $("#idTekstveld4").val();
+    window.alert(
+    "Ik ben" + naam +
+    " en telefoonnummer is " + nummer +
+    " en mijn adres is " + adres +
+    " en mijn e-mail is " + e-mail +
+    );
+    });
+    });
+    </script>
+    </head>
+    <body>
+    <form>
+    Wat is uw naam?
+    <input type="text" id="idTekstveld1"><br><br>
+    Wat is uw telefonnummer?
+    <input type="text" id="idTekstveld2"><br><br>
+    Wat is uw adres
+    <input type="text" id="idTekstveld3"><br><br>
+    Wat is uw e-mail adres?
+    <input type="text" id="idTekstveld4"><br><br>
+    <input id="knop" name="knop" type="button"
+    value="Klik op deze knop">
+    </form>
+    </body>
+    </html>

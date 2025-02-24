@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tandartsafspraak</title>
+    </head>
+    <body>
+        <h1>Tandartsafspraak</h1>
+        <br><br>
+        <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+            blanditiis praesentium voluptatum deleniti atque corrupti quos 
+            dolores et quas molestias excepturi sint occaecati cupiditate 
+            non provident, similique sunt in culpa qui officia deserunt 
+            mollitia animi, id est laborum et dolorum fuga. 
+            Et harum quidem rerum facilis est et expedita distinctio. 
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque 
+            nihil impedit quo minus id quod maxime placeat facere possimus, 
+            omnis voluptas assumenda est, omnis dolor repellendus. 
+            Temporibus autem quibusdam et aut officiis debitis aut rerum 
+            necessitatibus saepe eveniet ut et voluptates repudiandae sint 
+            et molestiae non recusandae. Itaque earum rerum hic tenetur a 
+            sapiente delectus, ut aut reiciendis voluptatibus maiores alias 
+            consequatur aut perferendis doloribus asperiores repellat."
+        </p>
+        <figure>
+        <img src="https://cdn.create.vista.com/api/media/medium/392741156/stock-photo-miniature-people-scientist-work-dental?token=" 
+        alt="Tand" width="300" height="200">
+        <img src="https://cdn.create.vista.com/api/media/medium/396606526/stock-photo-tooth-model-education-laboratory?token="
+        alt="tandanathomie" width="300" height="200">
+        <img src="https://cdn.create.vista.com/api/media/medium/571677064/stock-photo-dentist-showing-mouth-anatomy-usig?token="
+        alt="tandanathomie" width="300" height="200">
+        <figcaption>Tandanathomie</figcaption>
+        </figure>
+        <br>
+        <br>
+        <form method="post" action="bewaarinformatie.php">
+            <fieldset>
+               <legend>Persoonlijke gegevens</legend>
+               <br>
+               <br>
+                <label for="naam">Naam:</label>
+                <input id="naam" type="text" name="Naam">
+                <br>
+                <br>
+                <input type="radio" name="geslacht" value="man" checked>Man
+                <input type="radio" name="geslacht" value="vrouw">Vrouw
+                <input type="radio" name="geslacht" value="anders">Anders
+                <br>
+                <br>
+                <label for="adres">Adres:</label>
+                <input type="text" id="adres" name="adres">
+                <br>
+                <br>
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode">
+                <br>
+                <br>
+                <label for="woonplaats">Woonplaats</label>
+                <input type="text" id="woonplaats" name="woonplaats">
+            </fieldset>
+            <br>
+            <fieldset>
+               <legend>Beschrijving van de klachten</legend>
+               <br><br>
+                <input type="checkbox" name="onderwerpen" value="tandsteen">Tandensteen
+                <input type="checkbox" name="onderwerpen" value="gaatjes vullen">Gaatjes vullen
+                <input type="checkbox" name="onderwerpen" value="tandvleesontstekning">Tandvleesontstekning
+                <br>
+                <label for="gebiedfoto">Selecteer een foto</label>
+                <input type="file" id="gebiedfoto" name="gebiedfoto">
+                <br><br>
+                <b>Toelichting van de klachten</b>
+                    <br>
+                    <textarea name="bericht" maxlength="500"></textarea>
+                        <br><br>
+                        <b> Selecteer datum voor afspraak</b><br>
+                        <input type="date" name="datum" max="2030-12-31">
+                        <input type="submit" value="Verzend">
+                        <br><br>
+                    </fieldset>
+                    <br>
+                    </form>
+                    <br>
+                    <br>
+        <h1>Contactform</h1>
+        <br>
+        <form id="contactform" action="https://formspree.io/f/xpzgawgo" method="post">
+            <input type="text" name="name" placeholder="Uw naam">
+            <br>
+            <br>
+            <input type="email" name="_replyto" placeholder="Uw email">
+            <br>
+            <br>
+            <input type="hidden" name="_subject" value="Website contact">
+            <textarea name="message" placeholder="Uw bericht">
+            </textarea>
+            <br>
+            <br>
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="submit" value="Verzend">
+            <br> 
+        </form>
+    </body>
+</html>
